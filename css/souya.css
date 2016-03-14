@@ -22,13 +22,13 @@
 @media (max-width : 767px) {
 	.bio-left {
 	position : relative;
-	width : 100%;
+	width : 80%;
 	}
 }
 
 @media (min-width : 767px) {
 	.bio-right {
 	position : relative;
-	width : 100%;
+	width : 80%;
 	}
 }
