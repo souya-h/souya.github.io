@@ -8,6 +8,7 @@
 	float : left;
 	position : relative;
 	width : 50%;
+	text-align :center;
 	}
 }
 
@@ -23,6 +24,7 @@
 	.bio-left {
 	position : relative;
 	width : 80%;
+	margin : 0% 0% 10% 10%;
 	}
 }
 
@@ -30,5 +32,6 @@
 	.bio-right {
 	position : relative;
 	width : 80%;
+	margin : 0% 0% 10% 10%;
 	}
 }
