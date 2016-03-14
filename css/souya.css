@@ -3,6 +3,32 @@
   background-color: #e7e7e7;
 }
 
-.bio {
+@media (min-width : 768px) {
+	.bio-left {
 	float : left;
+	position : relative;
+	width : 50%;
+	}
+}
+
+@media (min-width : 768px) {
+	.bio-right {
+	float : right;
+	position : relative;
+	width : 50%;
+	}
+}
+
+@media (max-width : 767px) {
+	.bio-left {
+	position : relative;
+	width : 100%;
+	}
+}
+
+@media (min-width : 767px) {
+	.bio-right {
+	position : relative;
+	width : 100%;
+	}
 }
