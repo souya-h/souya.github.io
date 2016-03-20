@@ -2,36 +2,3 @@
 	  color: #555;
   background-color: #e7e7e7;
 }
-
-/*@media (min-width : 768px) {
-	.bio-left {
-	float : left;
-	position : relative;
-	width : 50%;
-	text-align :center;
-	}
-}
-
-@media (min-width : 768px) {
-	.bio-right {
-	float : right;
-	position : relative;
-	width : 50%;
-	}
-}
-
-@media (max-width : 767px) {
-	.bio-left {
-	position : relative;
-	width : 80%;
-	margin : 0% 0% 10% 10%;
-	}
-}
-
-@media (min-width : 767px) {
-	.bio-right {
-	position : relative;
-	width : 80%;
-	margin : 0% 0% 10% 10%;
-	}
-} */
