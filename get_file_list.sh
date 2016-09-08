@@ -7,9 +7,9 @@ dirary=()
 for filepath in $files; do
     fileary+=("$filepath")
 done
-echo [ > ./arts/file_list.json
+echo [ > ./arts/lost_property_list.json
 for i in ${fileary[@]}; do
-  echo '{ "id" : '$counts', "filepath" : "' ${i#*.} '"}' >> ./arts/file_list.json
+  echo '{ "id" : '$counts', "filepath" : "' ${i#*.} '"}' >> ./arts/lost_property_list.json
 let counts=$counts+1
 done
-echo ] >> ./arts/file_list.json
+echo ] >> ./arts/lost_property_list.json
