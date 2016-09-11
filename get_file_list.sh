@@ -9,7 +9,7 @@ for filepath in $files; do
 done
 echo [ > ./arts/lost_property_list.json
 for i in ${fileary[@]}; do
-  echo '{ "id" : '$counts', "filepath" : "' ${i#*.} '"}' >> ./arts/lost_property_list.json
+  echo '{ "id" : '$counts', "filepath" : "' ${i#*.} ', "thumb" : 0 }' >> ./arts/lost_property_list.json
 let counts=$counts+1
 done
 echo ] >> ./arts/lost_property_list.json
