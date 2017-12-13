@@ -24,5 +24,6 @@
 	width: 90%;
 }
 .twitter {
-	margin-right: 0px;
+	float: right;
+	text-align: right;
 }
