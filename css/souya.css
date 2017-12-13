@@ -20,7 +20,9 @@
     height: 100%;
 }
 .poet {
-	font-style: normal;
 	width: 80%;
   	margin: auto;
+}
+.twitter {
+	float: right;
 }
