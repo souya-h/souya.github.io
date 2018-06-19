@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>souya H.'s website</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./css/public_void.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="./js/pv_canvas.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,22 +31,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <div class="pv_back">
 <canvas id="pv_top"></canvas>
-<div class="body">
-    <div class="box place">
-            <span class="box-title">会場</span>
-            <p>東京藝術大学上野校地<br>大学会館2F 展示室</p>
-        </div>
-    <div class="box term">
-            <span class="box-title">会期</span>
-            <p>2018 JUL 02 - 06</p>
-        </div>
-    <div class="box time">
-            <span class="box-title">開館時間</span>
-            <p>10:00 - 19:30</p>
-            <p>初日は13:00から・最終日は19:00まで</p>
-        </div>
-    <div></div>
+<div class="body"><div class="container greens"><div class="row"></div><div class="row">
+    <div class="offset-md-2 col-md-10">
+    <div class="box place" id="basho">
+        <a href="https://www.geidai.ac.jp/access/ueno" target="_blank"></a>
+        <span class="box-title">会場</span>
+        <p>東京藝術大学上野校地<br>大学会館２Ｆ　展示室</p>
+    </div></div></div>
+    <div class="row"><div class="offset-md-8 col-md-4">
+        <div class="box artist">
+            <span class="box-title">出展</span>
+            <p>SOUYA<br>HANDA<br>GROUP</p>
+        </div></div></div>
+    <div class="row">
+    <div class="offset-md-2 col-md-4"><div class="box term">
+        <span class="box-title">会期</span>
+        <p>2018 JUL 02 - 06</p>
+    </div></div>
+        <div class="col-md-6"><div class="box time">
+        <span class="box-title">開館時間</span>
+        <p>10:00 - 19:30</p>
+        <p>初日は13:00から・最終日は19:00まで</p>
+    </div></div></div></div></div>
 </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!-- jQuery、Popper.js、Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>

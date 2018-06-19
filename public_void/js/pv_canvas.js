@@ -35,9 +35,16 @@ function drawTop() {
             }
         }
         context.beginPath();
-
-        context.font="30px sans-serif";
-        context.strokeText("public void exhibition()", w/25,h/10);
+        if(w>639){
+            context.font="60px sans-serif";
+            context.strokeText("public void exhibition();", w/25,h/9);
+        }
+        else{
+            context.font="50px sans-serif";
+            context.rotate(Math.PI / 2);
+            context.strokeText("public void exhibition();", h/15, - w*7/10);
+        }
+        
     }
 }
 function dotSizeRatio(x1,y1,x2,y2,rad){
@@ -54,3 +61,34 @@ function dotSizeRatio(x1,y1,x2,y2,rad){
 function distCulc(x1,y1,x2,y2){
     return (x2-x1)**2+(y2-y1)**2;
 }
+
+function jump(){
+    $(function(){
+        var classVal = $("this").attr('class');
+        alert(classVal);
+        var classVals = classVal.split(' '); // 取得した値を分割
+        alert(classVals[1]);
+        switch(classVals[1]){
+            case "place":
+                window.open("https://www.geidai.ac.jp/access/ueno");
+                break;
+        }
+        return false;
+    });
+}
+$(function(){//HTMLを読み込んで、
+    $(".box").click(function() {
+        var classVal = $(this).attr("class");
+        var classVals = classVal.split(' ');
+        switch(classVals[1]){
+            case "place":
+                window.open("https://www.geidai.ac.jp/access/ueno");
+                break;
+        
+            case "artist":
+                
+            break;
+        }
+        return false;
+    });
+});

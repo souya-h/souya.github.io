@@ -26,7 +26,7 @@ body{
     padding: 0.5em 1em;
     border: solid 3px #00ac4e;
     background: #00ac4e;
-    display:inline-block;
+    display: inline-block;
 }
 .box .box-title {
     position: absolute;
@@ -47,10 +47,16 @@ body{
     margin: 0; 
     padding: 0;
 }
+.greens{
+    margin-top: calc((100vh - 513px)/2);
+}
+p{
+   font-family: "Courier New", Consolas, monospace;
+}
 
+/*
 .place{
-    top:15vh;
-    left:10vw
+    padding-top:5vh;
 }
 .term{
     top:30vh;
@@ -58,4 +64,4 @@ body{
 .time{
     top:30vh;
     left:0vw;
-}
+}*/
