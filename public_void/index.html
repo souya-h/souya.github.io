@@ -4,14 +4,22 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>souya H.'s website</title>
+<title>public void</title>
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./css/public_void.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!-- jQuery、Popper.js、Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script type="text/javascript" src="./js/pv_canvas.js"></script>
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -39,10 +47,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p>東京藝術大学上野校地<br>大学会館２Ｆ　展示室</p>
     </div></div></div>
     <div class="row"><div class="offset-md-8 col-md-4">
-        <div class="box artist">
+        <div class="box artist modal-toggle" data-id="artist">
             <span class="box-title">出展</span>
             <p>SOUYA<br>HANDA<br>GROUP</p>
         </div></div></div>
+
     <div class="row">
     <div class="offset-md-2 col-md-4"><div class="box term">
         <span class="box-title">会期</span>
@@ -52,12 +61,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="box-title">開館時間</span>
         <p>10:00 - 19:30</p>
         <p>初日は13:00から・最終日は19:00まで</p>
-    </div></div></div></div></div>
-</div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!-- jQuery、Popper.js、Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div></div></div>
 
+    <div class="row">
+            <div class="offset-md-2 col-md-4"><div class="box statement modal-toggle" data-id="statement">
+            <span class="box-title">STATEMENT</span>
+            <p>public void</p>
+        </div></div></div></div></div>
+    
+
+</div>
+
+<div id="artist" class="modal-content box">
+        <span class="box-title">SOUYA HANDA GROUP</span>
+        <p>主宰者・半田颯哉を中心に、芸術学専攻のメンバーと組んだアーティストグループ。ニューメディア系の作品を軸に理論補強・キュレーション・展示計画で協力する。<br>
+            <br>主宰者について<br>
+                半田 颯哉（はんだ そうや）<br>
+                1994年静岡県生まれ、広島県育ち。アーティスト。<br>
+                東京藝術大学大学院美術研究科修士課程所属。<br>
+                主にプログラミング、テクノロジーをメディウムとして作品制作を行う。<br>
+                コンセプチュアルアート・ミニマルアートを志向しており、逆説や使途の転換などの要素を用いて「その本質は何か」を鑑賞者に問うてくる作品の実現を目指す。<br>
+                主な参加展覧会は、「MOTサテライト2017秋」、「ATLAS展2017」、「N/O/W/H/E/R/E － ニューメディアの場所(ユートピア)をめぐって」など。</p>
+    </div>
+
+    <div id="statement" class="modal-content box">
+            <span class="box-title">public void</span>
+            <p>開かれた空虚。<br>
+                    <br>
+                    或いは、プログラミングで関数（機能）を定義する際に使用する語句。<br>
+                    意味は、public=「どこからでもアクセス可能」、void=「機能は動作するが、何も値は返さない」。<br>
+                    <br>
+                    どちらもアートの性質を示すと仮定し、その検証を行うのが本展である。<br>
+                    <br>
+                    <br>
+                    市民革命以降、アートの性質は存在を公にされることへと変質した。殆どのアート作品は公開を前提に保管され、また誰もが閲覧可能なwww上にアーカイブされている。<br>
+                    <br>
+                    即ち、空虚としてのアート。<br>
+                    アートの美は作品自体にはない。実物であっても、デジタルなアーカイブであっても、その作品を鑑賞した我々の心が呼応するものが美である。作品自体はただの空虚な物質であり、現象である。<br>
+                    <br>
+                    即ち、アートは何も返さない。<br>
+                    アートは我々に何も与えない。飴玉やパッタイを配布するかもしれないが、我々の感覚に届くのは即物的な物質ではない。アートは我々に作用し、我々の中にある何かを変化させる。アートは何も返さない。<br>
+                    <br>
+                    <br>
+                    しかしてvoidと認識していながらも、愚かな私は決して単純ではない欲を向けてしまうのである。<br>
+                    <br>
+                    主催者</p>
+        </div>
 </body>

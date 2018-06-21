@@ -1,12 +1,11 @@
 body{
     background-color: #d1d3d4;
-    overflow: hidden;
 }
 
 .pv_back{
-    position:fixed;
+    position:absolute;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 10px);
 }
 
 .body{
@@ -53,8 +52,18 @@ body{
 p{
    font-family: "Courier New", Consolas, monospace;
 }
-
 /*
+@media (min-width:768){
+    body{
+        overflow: visible;
+    }
+}
+@media (max-width:767){
+    body{
+        overflow: visible;
+    }
+}
+
 .place{
     padding-top:5vh;
 }
@@ -65,3 +74,29 @@ p{
     top:30vh;
     left:0vw;
 }*/
+
+.modal-content {
+    position:absolute;
+    display:none;
+    z-index:10;
+    width:80vw;
+    margin:0;
+    padding:10px 20px;
+    background:#00ac4e;
+}
+
+.modal-content p {
+    margin:0;
+    padding:0;
+}
+
+.modal-overlay {
+    z-index:1;
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:calc(100vh - calc(100vh - 100%));
+    height:300%;
+    background-color:rgba(0,0,0,0.75);
+}

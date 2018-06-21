@@ -27,8 +27,8 @@ function drawTop() {
         for(var i=dotw_s; i<dotw_s+minlen*0.8; i+=5){
             for(var j=doth_s; j<doth_s+minlen*0.8; j+=5){
                 context.beginPath();
-                var dot_size = 2*dotSizeRatio(i,j,w/2,h/2,rad) + 0.3;
-                if(dot_size!=0.3){
+                var dot_size = 2*dotSizeRatio(i,j,w/2,h/2,rad) + 0.4;
+                if(dot_size!=0.4){
                     context.arc(i,j,dot_size,0,Math.PI*2,true);
                     context.fill();
                 }
@@ -62,33 +62,76 @@ function distCulc(x1,y1,x2,y2){
     return (x2-x1)**2+(y2-y1)**2;
 }
 
-function jump(){
-    $(function(){
-        var classVal = $("this").attr('class');
-        alert(classVal);
-        var classVals = classVal.split(' '); // 取得した値を分割
-        alert(classVals[1]);
-        switch(classVals[1]){
-            case "place":
-                window.open("https://www.geidai.ac.jp/access/ueno");
-                break;
-        }
-        return false;
-    });
-}
-$(function(){//HTMLを読み込んで、
+$(function(){
     $(".box").click(function() {
         var classVal = $(this).attr("class");
         var classVals = classVal.split(' ');
-        switch(classVals[1]){
-            case "place":
-                window.open("https://www.geidai.ac.jp/access/ueno");
-                break;
-        
-            case "artist":
-                
-            break;
+        if($(this).find("a").attr("target")=="_blank"){
+            window.open($(this).find("a").attr("href"), '_blank');
+        //}else{
+        //    window.location=$(this).find("a").attr("href");
         }
-        return false;
     });
 });
+
+$(function(){
+    // 「.modal」をクリック
+    $('.modal-toggle').click(function(){
+
+        // オーバーレイ用の要素を追加
+        $('body').append('<div class="modal-overlay"></div>');
+
+        // オーバーレイをフェードイン
+        $('.modal-overlay').fadeIn('slow');
+        // モーダルコンテンツのIDを取得
+        var modal = '#' + $(this).attr('data-id');
+        // モーダルコンテンツの表示位置を設定
+        modalResize();
+         // モーダルコンテンツフェードイン
+        $(modal).fadeIn('slow');
+
+        // 「.modal-overlay」あるいは「.modal-close」をクリック
+        $('.modal-overlay, .modal-content').off().click(function(){
+            // モーダルコンテンツとオーバーレイをフェードアウト
+            $(modal).fadeOut('slow');
+            $('.modal-overlay').fadeOut('slow',function(){
+                // オーバーレイを削除
+                $('.modal-overlay').remove();
+            });
+        });
+
+        // リサイズしたら表示位置を再取得
+        $(window).on('resize', function(){
+            modalResize();
+        });
+
+        // モーダルコンテンツの表示位置を設定する関数
+        function modalResize(){
+            // ウィンドウの横幅、高さを取得
+            var w = $(window).width();
+            var h = $(window).height();
+
+            // モーダルコンテンツの表示位置を取得
+            var x = (w - $(modal).outerWidth(true)) / 2;
+            var y = (h - $(modal).outerHeight(true)) / 2;
+            if(y<h*0.1){
+                y=h*0.1;
+            }
+            // モーダルコンテンツの表示位置を設定
+            $(modal).css({'left': x + 'px','top': y + 'px'});
+            var modalHeight = $(modal).height();
+            var docHeight = $('.body').height();
+            var backHeight = modalHeight + h*0.2;
+            if(backHeight<docHeight){
+                backHeight = docHeight;
+            }
+            if(backHeight<h){
+                backHeight=h;
+            }
+            $('.modal-overlay').css({'height': backHeight + 'px'});
+        }
+
+    });
+});
+
+
