@@ -27,3 +27,13 @@
 .twitter {
 	text-align: right;
 }
+.onkawara {
+	font-family: 'futura-pt' sans-serif !important;
+	color:white;
+	text-align:center;
+}
+.myname {
+	font-family: 'ten-mincho' 'ヒラギノ明朝 ProN W6', 'HiraMinProN-W6', 'HG明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS 明朝', serif !important;
+	color:white;
+	text-align:center;
+}
