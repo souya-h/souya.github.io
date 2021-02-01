@@ -5,7 +5,6 @@ var clickEventType=((window.ontouchstart!==null)?'click':'touchstart');
 window.addEventListener("touchstart", function (event) {
 //$("body").on(clickEventType, function() {
   // windowがスクロールされた時に実行する処理
-  alert("test");
   document.body.innerHTML = document.body.innerHTML.replace("虐殺", "事件");
 
   touchCount++;
