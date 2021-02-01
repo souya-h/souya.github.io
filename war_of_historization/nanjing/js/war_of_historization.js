@@ -7,7 +7,7 @@ window.addEventListener("touchstart", function (event) {
   // windowがスクロールされた時に実行する処理
   document.body.innerHTML = document.body.innerHTML.replace("虐殺", "事件");
 
-  touchCount++;
+
   if(touchCount>5){
     document.body.innerHTML = document.body.innerHTML.replace("屠殺", "処理");
     document.body.innerHTML = document.body.innerHTML.replace("略奪", "募金");
@@ -21,7 +21,7 @@ window.addEventListener("touchstart", function (event) {
   }
   if(touchCount>20){
     document.body.innerHTML = document.body.innerHTML.replace("日本軍", "中国軍");
-    if(touchCount%4==1){
+    if(touchCount%4==1 && touchCount<=40){
       $('main').prepend('<img src="./src/kyokujitsuki.png" width="50%">');
     }
   }
@@ -31,4 +31,5 @@ window.addEventListener("touchstart", function (event) {
       $('main').prepend('<img src="./src/kyokujitsuki.png" width="50%">');
     }
   }
+  touchCount++;
 });
