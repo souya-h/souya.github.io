@@ -1,7 +1,8 @@
 // JavaScript Document
 var touchCount = 0;
 var clickEventType=((window.ontouchstart!==null)?'click':'touchstart');
-$(window).ontouchstart(function() {
+//$(window).ontouchstart(function() {
+window.addEventListener("touchstart", function (event) {
 //$("body").on(clickEventType, function() {
   // windowがスクロールされた時に実行する処理
   alert("test");
