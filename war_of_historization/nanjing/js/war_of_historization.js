@@ -20,8 +20,15 @@ window.addEventListener("touchstart", function (event) {
     document.body.innerHTML = document.body.innerHTML.replace("虐殺", "事件");
   }
   if(touchCount>20){
-    $('main').prepend('<img src="./src/kyokujitsuki.png" width="50%">');
     document.body.innerHTML = document.body.innerHTML.replace("日本軍", "中国軍");
+    if(touchCount%4==1){
+      $('main').prepend('<img src="./src/kyokujitsuki.png" width="50%">');
+    }
   }
-
+  if(touchCount>40){
+    document.body.innerHTML = document.body.innerHTML.replace("事件", "事件の捏造");
+    if(touchCount%2==1){
+      $('main').prepend('<img src="./src/kyokujitsuki.png" width="50%">');
+    }
+  }
 });
